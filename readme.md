@@ -41,29 +41,29 @@ Berikut jumlah data yang memiliki missing value :
 ![Missing_Stat](https://i.postimg.cc/9XZq0t7g/missing-number.png)
 
 Berikut gambaran data yang hilang :
-![Missing](https://i.postimg.cc/R0QBkytz/missing-val.png)
+[![missing-val.png](https://i.postimg.cc/R0QBkytz/missing-val.png)](https://postimg.cc/hJj6xCMC)
 
-**Explorative Data Analyis**:
+**Explorative Data Analysis**:
 - (Date Of Joining diubah menjadi Join Days, dengan isi selisih tanggal tertinggi di data dengan tanggal pegawai. Hal ini memudahkan visualisasi data untuk pegawai mana yang paling lama ada di perusahaan)
-- Join Days cukup terbagi rata. Pegawai-pegawai memiliki tanggal join perusahaan yang beragam.
+- Join Days cukup terbagi rata. Pegawai-pegawai memiliki tanggal join perusahaan yang beragam.<br>
 ![Join Days](https://i.postimg.cc/MKW2QWck/join-days.png)
 
-- Lebih dari 6000 pegawai berada di Designation 2.0
+- Lebih dari 6000 pegawai berada di Designation 2.0 <br>
 ![designation.png](https://i.postimg.cc/522W0CgQ/designation.png)
 
-- Gender yang dominan dalam data ini adalah Female.
+- Gender yang dominan dalam data ini adalah Female.<br>
 ![gender](https://i.postimg.cc/kX9d0Ztc/gender.png)
 
-- Dalam data ini, rerata Burn Rate gender Male lebih tinggi dari rerata Burn Rate Female.
+- Dalam data ini, rerata Burn Rate gender Male lebih tinggi dari rerata Burn Rate Female.<br>
 ![gender-burn-rate.png](https://i.postimg.cc/zXS4L1xb/gender-burn-rate.png)
 
-- Rerata Burn Rate dalam pegawai Company Type Service dan Product sama
+- Rerata Burn Rate dalam pegawai Company Type Service dan Product sama<br>
 ![type-burn-rate.png](https://i.postimg.cc/t4Bf5NQ9/type-burn-rate.png)
 
-- Rerata Burn Rate Pegawai tanpa WFH Setup Available lebih tinggi daripada Rerata Burn Rate pegawai dengan WFH Setup Available 
+- Rerata Burn Rate Pegawai tanpa WFH Setup Available lebih tinggi daripada Rerata Burn Rate pegawai dengan WFH Setup Available <br>
 ![WFH-burn-rate.png](https://i.postimg.cc/htD6T3YC/WFH-burn-rate.png)
 
-- Rata-Rata burn rate data adalah sekitar 0.452444. Banyak pegawai yang memiliki nilai burnout 0.4 - 0.5
+- Rata-Rata burn rate data adalah sekitar 0.452444. Banyak pegawai yang memiliki nilai burnout 0.4 - 0.5<br>
 ![Describe](https://i.postimg.cc/SsCFWR74/describe.png)
 ![Burn Rate](https://i.postimg.cc/4dhLcc54/burn-rate.png)
 
