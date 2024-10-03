@@ -38,7 +38,7 @@ Data yang digunakan diambil dari Kaggle. Data tersebut diambil dari suatu kompet
 **Missing Value**:
 Berikut jumlah data yang memiliki missing value :
 
-![Missing_Stat](https://i.postimg.cc/9XZq0t7g/missing-number.png)
+[![Missing_Stat](https://i.postimg.cc/9XZq0t7g/missing-number.png)](https://i.postimg.cc/9XZq0t7g/missing-number.png)
 
 Berikut gambaran data yang hilang :
 [![missing-val.png](https://i.postimg.cc/R0QBkytz/missing-val.png)](https://postimg.cc/hJj6xCMC)
@@ -46,26 +46,26 @@ Berikut gambaran data yang hilang :
 **Explorative Data Analysis**:
 - (Date Of Joining diubah menjadi Join Days, dengan isi selisih tanggal tertinggi di data dengan tanggal pegawai. Hal ini memudahkan visualisasi data untuk pegawai mana yang paling lama ada di perusahaan)
 - Join Days cukup terbagi rata. Pegawai-pegawai memiliki tanggal join perusahaan yang beragam.<br>
-![Join Days](https://i.postimg.cc/MKW2QWck/join-days.png)
+[![Join Days](https://i.postimg.cc/MKW2QWck/join-days.png)](https://i.postimg.cc/MKW2QWck/join-days.png)
 
 - Lebih dari 6000 pegawai berada di Designation 2.0 <br>
-![designation.png](https://i.postimg.cc/522W0CgQ/designation.png)
+[![designation.png](https://i.postimg.cc/522W0CgQ/designation.png)](https://i.postimg.cc/522W0CgQ/designation.png)
 
 - Gender yang dominan dalam data ini adalah Female.<br>
-![gender](https://i.postimg.cc/kX9d0Ztc/gender.png)
+[![gender](https://i.postimg.cc/kX9d0Ztc/gender.png)](https://i.postimg.cc/kX9d0Ztc/gender.png)
 
 - Dalam data ini, rerata Burn Rate gender Male lebih tinggi dari rerata Burn Rate Female.<br>
-![gender-burn-rate.png](https://i.postimg.cc/zXS4L1xb/gender-burn-rate.png)
+[![gender-burn-rate.png](https://i.postimg.cc/zXS4L1xb/gender-burn-rate.png)](https://i.postimg.cc/zXS4L1xb/gender-burn-rate.png)
 
 - Rerata Burn Rate dalam pegawai Company Type Service dan Product sama<br>
-![type-burn-rate.png](https://i.postimg.cc/t4Bf5NQ9/type-burn-rate.png)
+[![type-burn-rate.png](https://i.postimg.cc/t4Bf5NQ9/type-burn-rate.png)](https://i.postimg.cc/t4Bf5NQ9/type-burn-rate.png)
 
 - Rerata Burn Rate Pegawai tanpa WFH Setup Available lebih tinggi daripada Rerata Burn Rate pegawai dengan WFH Setup Available <br>
-![WFH-burn-rate.png](https://i.postimg.cc/htD6T3YC/WFH-burn-rate.png)
+[![WFH-burn-rate.png](https://i.postimg.cc/htD6T3YC/WFH-burn-rate.png)](https://i.postimg.cc/htD6T3YC/WFH-burn-rate.png)
 
 - Rata-Rata burn rate data adalah sekitar 0.452444. Banyak pegawai yang memiliki nilai burnout 0.4 - 0.5<br>
-![Describe](https://i.postimg.cc/SsCFWR74/describe.png)
-![Burn Rate](https://i.postimg.cc/4dhLcc54/burn-rate.png)
+[![Describe](https://i.postimg.cc/SsCFWR74/describe.png)](https://i.postimg.cc/SsCFWR74/describe.png)
+[![Burn Rate](https://i.postimg.cc/4dhLcc54/burn-rate.png)](https://i.postimg.cc/4dhLcc54/burn-rate.png)
 
 - Outlier dideteksi dengan menggunakan fungsi quantile panda untuk melihat quantile 25% dan 75%. Quantile ini disebut Q1 dan Q3. Sejauh ini tidak ditemukan data outlier. Berikut kode yang dipakai 
 ```
@@ -73,10 +73,10 @@ Q1, Q3 = (employees_train_nonNull.quantile(0.25),employees_train_nonNull.quantil
 IQR= Q3-Q1
 employees_train_nonNull[((employees_train_nonNull>(Q3+1.5*IQR))).all(axis=1)]
 ```
-![Outlier](https://i.postimg.cc/C5pQvFhg/ml-outlier.png)
+[![Outlier](https://i.postimg.cc/C5pQvFhg/ml-outlier.png)](https://i.postimg.cc/C5pQvFhg/ml-outlier.png)
 
 - Dalam matriks korelasi ini, data numerik selain join days cukup berpengaruh kepada burn rate. Mental Fatigue Score memiliki korelasi yang dekat dengan Burn Rate dengan skor 0.96, diikuti dengan Resources Allocation engan nilai 0.86 dan Designation dengan nilai 0.74. Join Days tidak memiliki pengaruh tinggi terhada tingkat burnout.
-![correlation.png](https://i.postimg.cc/L8s47XqR/correlation.png)
+[![correlation.png](https://i.postimg.cc/L8s47XqR/correlation.png)](https://i.postimg.cc/L8s47XqR/correlation.png)
 
 
 ## Data Preparation
@@ -126,9 +126,9 @@ boosting.fit(X_train, Y_train)
 
 ## Evaluation
 Metrik yang digunakan untuk kasus ini adalah MSE (Mean Squared Error). Metrik ini cukup sering dipakai untuk kasus regresi.
-Berikut rumus MSE yang diambil dari Machine Learning Terapan Dicoding. [Machine Learning Terapan](https://www.dicoding.com/academies/319/tutorials/18595)
+Berikut rumus MSE yang diambil dari Machine Learning Terapan Dicoding. [[Machine Learning Terapan](https://www.dicoding.com/academies/319/tutorials/18595)](https://www.dicoding.com/academies/319/tutorials/18595)
 
-![MSE](https://i.postimg.cc/N0Wv9mXb/2021071619431112f1106e20559e77c855cea11d1b1479.jpg)
+[![MSE](https://i.postimg.cc/N0Wv9mXb/2021071619431112f1106e20559e77c855cea11d1b1479.jpg)](https://i.postimg.cc/N0Wv9mXb/2021071619431112f1106e20559e77c855cea11d1b1479.jpg)
 
 Inti rumus ini adalah menjumlahkan semua selisih hasil sesungguhnya (yi) dengan hasil prediksi(y_pred_i) yang telah dikuadratkan. Setelah semua dijumlahkan, hasil akan dibagi jumlah data (N). Semakin dekat prediksi ke hasil sesungguhnya, semakin kecil nilai MSE, dan semakin akurat prediksi model tersebut.
 
@@ -142,6 +142,6 @@ Berikut hasil dari model-model yang dicoba :
 | train_mse   | 0.003397          | 0.000823            | 0.004358              |
 | val_mse     | 0.003397          | 0.003225            | 0.004572              |
 
-![Hasil](https://i.postimg.cc/1XrkjdjY/result.png)
+[![Hasil](https://i.postimg.cc/1XrkjdjY/result.png)](https://i.postimg.cc/1XrkjdjY/result.png)
 
 Berdasarkan hasil tersebut, Random Forest memiliki mean squared error yang lebih kecil dibanding algoritma lain. Maka dari itu, Random Forest dipilih menjadi model terbaik untuk kasus ini
